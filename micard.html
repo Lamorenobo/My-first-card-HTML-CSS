@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: rgb(201, 164, 246);
+        }
+        section{
+            
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .card{
+            width: 500px;
+            height: 600px;
+            background: rgb(72, 22, 113);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            
+        }
+        .card img {
+            width: 100%;
+        }
+        .card .circle {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: rgb(221, 119, 250);
+            position: absolute;
+            top: 115px;
+            left: 140px;
+            border:solid 5px white;            
+            overflow: hidden;
+        }
+        .btn{
+            width: 170px;
+            height: 30px;
+            background-color: rgb(186, 152, 245);
+            color: white;
+            font-family: monospace;
+            font-size: 25px;
+            border-radius: 14px;
+            text-align: center;
+            text-decoration: none;
+            
+        }
+        .btn:first-child{
+            position: absolute;
+            bottom: 130px;
+            left: 280px;
+
+        }  
+        .btn:nth-child(2){
+            position: absolute;
+            bottom: 130px;
+            left: 70px;
+        }  
+        .btn:nth-child(3){
+            position: absolute;
+            bottom: 80px;
+            left: 170px;
+        }
+        p {
+            width: 400px;
+            height: 40px;
+            font-family: monospace;
+            color: white;
+            margin:0;    
+            position:absolute;
+            
+
+        }
+        #name{
+            left: 120px;
+            bottom:200px;
+            font-size: 20px;
+        }
+        #carreer{
+            font-size: 13px;
+            left: 155px;
+            bottom: 170px;
+        }
+        #vocacion{
+            font-size: 10px;
+            color: bisque;
+            left: 175px;
+            bottom: 150px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <section>
+        
+        <div class="card">
+            <img src="https://images.pexels.com/photos/159201/circuit-circuit-board-resistor-computer-159201.jpeg?auto=compress&cs=tinysrgb&w=600" alt="electronic">
+            <div class="circle">
+                <img src="https://images.pexels.com/photos/12652949/pexels-photo-12652949.jpeg?auto=compress&cs=tinysrgb&w=600" alt="cat-face">
+            </div>
+            
+                <p  class="datos" id="name">Laura Alejandra Moreno</p>
+                <p class="datos" id="carreer">Estudiante de ingenieria</p>
+                <p class="datos" id="vocacion">desarrolladora frontend</p>
+            
+           
+            <div class="info">
+                <a class="btn" href="https://www.instagram.com/laumoreno08_/">Instagram</a>
+                <a class="btn">Github</a>
+                <a class="btn">linkedin</a>
+                
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
